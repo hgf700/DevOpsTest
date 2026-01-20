@@ -1,3 +1,4 @@
-console.log('strt test');
+console.log('start mine test');
 setTimeout(()=>console.log('wait'),5000);
-console.log('complete test');
+console.log('wait 5 s');
+console.log('complete mine test');
