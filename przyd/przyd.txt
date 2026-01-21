@@ -1,4 +1,19 @@
-docker run -p 5137:5137 -v "$(pwd):/app" -v /app/node_modules reactapp-docker
+docker run -p 5173:5173 -v "$(pwd):/app" -v /app/node_modules reactapp-docker
 
 #auto aktualizuje uzywany contaner zamiast go dockryzowac co chwile 
 -v "$(pwd):/app"
+
+#auto gen
+docker init
+
+#wlaczenei
+docker compose up
+
+#udost
+docker reactapp-docker hgf70/reactapp-docker
+
+#push 
+docker push hgf70/reactapp-docker
+
+#tworz docker
+docker build -t reactapp-docker . 
