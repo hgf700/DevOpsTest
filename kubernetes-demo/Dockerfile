@@ -10,7 +10,7 @@ COPY . .
 
 USER node
 
-EXPOSE 3000
+EXPOSE 8080
 
 ENV NODE_ENV=production
 
