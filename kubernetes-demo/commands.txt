@@ -1,0 +1,20 @@
+kubectl get nodes
+
+kubectl cluster-info
+
+# 1 lub
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/service.yaml
+
+# lub 2 
+kubectl apply -f k8s/
+
+kubectl get pods -w
+
+kubectl get services
+
+minikube service kubernetes-demo-api-service
+
+minikube stop
+
+minikube start
