@@ -18,3 +18,8 @@ minikube service kubernetes-demo-api-service
 minikube stop
 
 minikube start
+
+#Infrastucuture as Code in package.json
+
+"deploy": "powershell -ExecutionPolicy Bypass -File deploy.ps1"
+npm run deploy
